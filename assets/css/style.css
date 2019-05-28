@@ -8,10 +8,10 @@ body {
     background-color: #f4f4f4;
 }
 
-/***********************Global**********/
+/***********************General**********/
 
 .container {
-    width: 80%;
+    width: 90%;
     margin: auto;
     overflow: hidden;
 }
@@ -32,6 +32,7 @@ body {
     margin-top: 10px;
     margin-bottom: 10px;
 }
+
 
 /***********************Header**********/
 
@@ -63,11 +64,6 @@ header #branding {
 header #branding h1 {
     margin: 0;
     font-size: 30px;
-}
-
-header nav {
-    float: right;
-    margin-top: 10px;
 }
 
 header .highlight,
@@ -124,59 +120,46 @@ header a:hover {
     width: 250px;
 }
 
-/***********************Boxes**********/
 
-#boxes {
-    margin-top: 20px;
-}
 
-#boxes .box {
-    float: left;
-    text-align: center,
-    width: 33%;
-    padding: 10px;
-}
+/***********************About Page**********/
 
-#boxes .box-1 img {
-
-    width: 100%;
-}
-
-#boxes .box-2 img {
-
-    width: 33%;
-}
-
-#boxes .box-3 img {
-
-    width: 33%;
+#hero-about  {
+    background-image: url("../images/newbuild.jpg");
+    background-size: cover;
+    background-position: center center;
+    position: relative;
+    opacity: 0.7;
+    top: 0;
+    bottom: 0;
+    height: 100vh;
+    z-index: -10;
 }
 
 
-/***********************Sidebar**********/
-
-aside#sidebar {
+#sidebar {
     float: right;
     width: 30%;
     margin-top: 10px;
 }
 
-aside#sidebare .quote input,
-aside#sidebare .quote textarea {
-    width: 90%;
-    padding: 5px;
-}
-
-/***********************Main-col**********/
-
-article#main-col {
+#main-col-about {
     float: left;
     width: 65%;
+    padding-right: 10px;
+    color: #fff;
 }
 
 /***********************Services**********/
 
-ul#services li {
+#main-col {
+    float: left;
+    width: 65%;
+    padding-right: 10px;
+    color: #808080;
+}
+
+#services li {
     list-style: none;
     padding: 20px;
     border: #cccccc solid 1px;
@@ -184,6 +167,51 @@ ul#services li {
     background: #e6e6e6;
 }
 
+
+
+/*--------------------contact form--------------------*/
+
+#hero {
+    background-image: url("../images/kilmallock.jpg");
+    background-size: cover;
+    background-position: center center;
+    position: relative;
+    opacity: 0.5;
+    top: 0;
+    bottom: 0;
+    height: 100vh;
+    z-index: -10;
+}
+#hero-overlay {
+    position: absolute;
+    background-color: rgba (0,0,0,0.5);
+    top: 0;
+    bottom: 0;
+    height: 100%;
+    width: 100%
+    z-index: -5;
+    margin-bottom: 0;
+}
+
+.col {
+    font-family: Arial, sans-serif;
+    color: #fff;
+}
+
+
+.contact-heading {
+    padding-top: 50px;
+
+}
+
+.center-form {
+    padding-top: 40px;
+    margin: 0 auto;
+    max-width: 70%;
+}
+
+
+/*-------------------------Footer--------------------*/
 footer {
     padding: 20px;
     margin-top: 20px;
@@ -193,17 +221,36 @@ footer {
 }
 
 
+.social {
+     width: 32px;
+    height: 32px;
+    padding: 12px 0;
+    border-radius: 50%;
+    font-size: 13px;
+    line-height: 7px;
+    text-align: center;
+    color: #fafafa;
+    background: #a9a9a9;
+    transition: all 0.35s ease-in-out;
+    -moz-transition: all 0.35s ease-in-out;
+    -webkit-transition: all 0.35s ease-in-out;
+    -o-transition: all 0.35s ease-in-out;
+}
+
+.social li a i:hover {
+    background: #768090;
+}
 /***********************Media Queries***************/
 
+
 @media(max-width: 768px) {
-    header #branding,
+    #branding,
     header nav,
     header nav li,
     #enquiry h1,
     #enquiry form,
-    #boxes .box,
-    article#main-cpl,
-    aside#sidebar {
+    #main-cpl,
+    #sidebar {
         float: none;
         text-align: center;
         width: 100%;
